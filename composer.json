@@ -1,0 +1,21 @@
+{
+    "require": {
+        "johnpbloch/wordpress": "^5.8",
+        "wpackagist-plugin/advanced-custom-fields": "^5.9",
+        "wpackagist-plugin/contact-form-7": "^5.4",
+        "wpackagist-plugin/cyr2lat": "^5.2",
+        "wpackagist-plugin/change-wp-admin-login": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wordpress/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}
