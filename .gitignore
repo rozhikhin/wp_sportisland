@@ -1,4 +1,3 @@
-# ignore everything in the root except the "wp-content" directory.
 vendor/
 wordpress/*
 !wordpress/sportisland.sql
@@ -16,6 +15,7 @@ node_modules/
 
 # ignore log files and databases
 *.log
+
 
 *.sqlite
 .idea/
