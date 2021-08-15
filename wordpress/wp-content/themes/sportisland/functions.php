@@ -1,5 +1,8 @@
 <?php
 
+get_template_part('inc/SI_Widget_Text');
+get_template_part('inc/SI_Widget_Contacts');
+
 add_action('show_admin_bar', '__return_false');
 add_action('after_setup_theme', 'si_setup');
 add_action('wp_enqueue_scripts', 'si_scripts');
@@ -72,6 +75,9 @@ function si_register() {
         'before_widget' => null,
         'after_widget'  => null,
     ]);
+
+    register_widget('SI_Widget_Text');
+    register_widget('SI_Widget_Contacts');
 
 }
 

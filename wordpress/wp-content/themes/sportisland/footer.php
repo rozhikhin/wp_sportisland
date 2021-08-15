@@ -57,11 +57,6 @@
                     <?php endforeach; ?>
                 </ul>
             </nav>
-
-<!--            <address class="main-header__widget widget-contacts">-->
-<!--                <a href="tel:88007003030" class="widget-contacts__phone"> 8 800 700 30 30 </a>-->
-<!--                <p class="widget-contacts__address"> ул. Приречная 11 </p>-->
-<!--            </address>-->
             <?php
             if (is_active_sidebar('si-footer-sidebar')) {
                 dynamic_sidebar('si-footer-sidebar');
@@ -72,10 +67,22 @@
     <footer class="main-footer wrapper">
         <div class="row main-footer__row">
             <div class="main-footer__widget main-footer__widget_copyright">
-                <span class="widget-text"> © 2019 Все права защищены. SportIsland </span>
+                <span class="widget-text">
+                    <?php
+                        if (is_active_sidebar('si-footer-left-sidebar')) {
+                            dynamic_sidebar('si-footer-left-sidebar');
+                        }
+                    ?>
+                </span>
             </div>
             <div class="main-footer__widget">
-                <p class="widget-contact-mail"> Если у вас возникли вопросы, пожалуйста свяжитесь с нами по почте <a href="mailto:sportisland@gmail.ru">sportisland@gmail.ru</a>
+                <p class="widget-contact-mail">
+                    <?php
+                    if (is_active_sidebar('si-footer-center-sidebar')) {
+                        dynamic_sidebar('si-footer-center-sidebar');
+                    }
+                    ?>
+
                 </p>
             </div>
             <div class="main-footer__widget main-footer__widget_social">
