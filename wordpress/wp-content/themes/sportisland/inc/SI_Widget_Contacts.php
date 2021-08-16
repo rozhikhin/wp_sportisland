@@ -10,7 +10,7 @@ class SI_Widget_Contacts extends WP_Widget
             'SportIsland - Contacts Widget',
             [
                 'name' => 'SportIsland - Contacts Widget',
-                'decsription' => 'Show phone and address '
+                'description' => 'Show phone and address '
             ]
         );
     }

@@ -8,7 +8,7 @@ class SI_Widget_Text extends WP_Widget {
             'SportIsland - Text Widget',
             [
                 'name' => 'SportIsland - Text Widget',
-                'decsription' => 'Show simple text '
+                'description' => 'Show simple text '
             ]
         );
     }

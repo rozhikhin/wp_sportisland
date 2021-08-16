@@ -2,11 +2,13 @@
 
 get_template_part('inc/SI_Widget_Text');
 get_template_part('inc/SI_Widget_Contacts');
+get_template_part('inc/SI_Widget_Social_Link');
 
 add_action('show_admin_bar', '__return_false');
 add_action('after_setup_theme', 'si_setup');
 add_action('wp_enqueue_scripts', 'si_scripts');
 add_action('widgets_init', 'si_register');
+
 function si_setup(){
     add_theme_support('custom-logo');
     add_theme_support('title-tag');
@@ -14,6 +16,8 @@ function si_setup(){
     // add_theme_support('menus');
     register_nav_menu('menu-header', 'Menu in Header');
     register_nav_menu('menu-footer', 'Menu in Footer');
+
+    remove_theme_support( 'widgets-block-editor' );
 
 }
 
@@ -78,6 +82,7 @@ function si_register() {
 
     register_widget('SI_Widget_Text');
     register_widget('SI_Widget_Contacts');
+    register_widget('SI_Widget_Social_Link');
 
 }
 
