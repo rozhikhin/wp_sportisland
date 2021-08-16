@@ -58,9 +58,9 @@
                 </ul>
             </nav>
             <?php
-            if (is_active_sidebar('si-footer-sidebar')) {
-                dynamic_sidebar('si-footer-sidebar');
-            }
+                if (is_active_sidebar('si-footer-sidebar')) {
+                    dynamic_sidebar('si-footer-sidebar');
+                }
             ?>
         </div>
     </header>

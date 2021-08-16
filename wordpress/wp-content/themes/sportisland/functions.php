@@ -3,6 +3,7 @@
 get_template_part('inc/SI_Widget_Text');
 get_template_part('inc/SI_Widget_Contacts');
 get_template_part('inc/SI_Widget_Social_Link');
+get_template_part('inc/SI_Widget_Iframe');
 
 add_action('show_admin_bar', '__return_false');
 add_action('after_setup_theme', 'si_setup');
@@ -83,6 +84,7 @@ function si_register() {
     register_widget('SI_Widget_Text');
     register_widget('SI_Widget_Contacts');
     register_widget('SI_Widget_Social_Link');
+    register_widget('SI_Widget_Iframe');
 
 }
 
