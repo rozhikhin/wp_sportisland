@@ -106,8 +106,8 @@ class SI_Widget_Social_Link extends WP_Widget {
             'SI_Widget_Social_Link',
             'SportIsland - Social Links Wilink',
             [
-                'name' => 'SportIsland - Social Links Widget',
-                'description' => 'Show Social Links icons '
+                'name' => __('SportIsland - Social Links Widget', 'sportisland'),
+                'description' => __('Show Social Links icons', 'sportisland')
             ]
         );
     }
@@ -115,7 +115,9 @@ class SI_Widget_Social_Link extends WP_Widget {
     public function form($instance){
         ?>
             <p>
-                <label for="<?php echo $this->get_field_id('id-link')  ?>">Введите текст</label>
+                <label for="<?php echo $this->get_field_id('id-link')  ?>">
+                    <?php _e('Enter link to social network', 'sportisland') ?>
+                </label>
                 <input
                     type="text"
                     id="<?php echo $this->get_field_id('id-link') ?>"
@@ -125,7 +127,9 @@ class SI_Widget_Social_Link extends WP_Widget {
                 >
             </p>
         <p>
-            <label for="<?php echo $this->get_field_id('id-slug')  ?>">Выберите социальную сеть</label>
+            <label for="<?php echo $this->get_field_id('id-slug')  ?>">
+                <?php _e('Choose social network', 'sportisland') ?>
+            </label>
             <select
                     id="<?php echo $this->get_field_id('id-slug') ?>"
                     name="<?php echo $this->get_field_name('slug') ?>"

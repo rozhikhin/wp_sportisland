@@ -17,6 +17,7 @@ function si_setup(){
     // add_theme_support('menus');
     register_nav_menu('menu-header', 'Menu in Header');
     register_nav_menu('menu-footer', 'Menu in Footer');
+    load_theme_textdomain( 'sportisland', get_template_directory() . '/languages' );
 
     remove_theme_support( 'widgets-block-editor' );
 

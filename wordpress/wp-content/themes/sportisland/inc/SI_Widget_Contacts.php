@@ -9,8 +9,8 @@ class SI_Widget_Contacts extends WP_Widget
             'SI_Widget_Contacts',
             'SportIsland - Contacts Widget',
             [
-                'name' => 'SportIsland - Contacts Widget',
-                'description' => 'Show phone and address '
+                'name' => __('SportIsland - Contacts Widget', 'sportisland'),
+                'description' => __('Show phone and address', 'sportisland')
             ]
         );
     }
@@ -19,7 +19,9 @@ class SI_Widget_Contacts extends WP_Widget
         ?>
             <div class="">
                 <p>
-                    <label for="<?php echo $this->get_field_id('id-phone')  ?>">Введите номер телефона</label>
+                    <label for="<?php echo $this->get_field_id('id-phone')  ?>">
+                        <?php _e('Input phone number', 'sportisland') ?>
+                    </label>
                     <input
                             type="text"
                             id="<?php echo $this->get_field_id('id-phone') ?>"
@@ -29,7 +31,9 @@ class SI_Widget_Contacts extends WP_Widget
                     >
                 </p>
                 <p>
-                    <label for="<?php echo $this->get_field_id('id-address')  ?>">Введите адрес</label>
+                    <label for="<?php echo $this->get_field_id('id-address')  ?>">
+                        <?php _e('Input your address', 'sportisland') ?>
+                    </label>
                     <input
                             type="text"
                             id="<?php echo $this->get_field_id('id-address') ?>"
@@ -52,10 +56,10 @@ class SI_Widget_Contacts extends WP_Widget
         ?>
                 <address class="main-header__widget widget-contacts">
                     <a href="tel:<?php echo $phone ?>" class="widget-contacts__phone">
-                        <?php echo  $instance['phone']?>
+                        <?php echo  esc_html($instance['phone'])?>
                     </a>
                     <p class="widget-contacts__address">
-                        <?php echo  $instance['address']?>
+                        <?php echo  esc_html($instance['address'])?>
                     </p>
                 </address>
         <?php

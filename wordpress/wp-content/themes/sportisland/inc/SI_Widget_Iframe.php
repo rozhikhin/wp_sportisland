@@ -9,8 +9,8 @@ class SI_Widget_Iframe extends WP_Widget
             'SI_Widget_Iframe',
             'SportIsland - Iframe Widget',
             [
-                'name' => 'SportIsland - Iframe Widget',
-                'description' => 'Show iframe content'
+                'name' => __('SportIsland - Iframe Widget', 'sportisland'),
+                'description' => __('Show iframe content', 'sportisland'),
             ]
         );
     }
@@ -18,7 +18,9 @@ class SI_Widget_Iframe extends WP_Widget
     public function form($instance){
         ?>
                 <p>
-                    <label for="<?php echo $this->get_field_id('id-code');  ?>">Введите текст</label>
+                    <label for="<?php echo $this->get_field_id('id-code');  ?>">
+                        <?php __('Input iframe code', 'sportisland') ?>
+                    </label>
                     <textarea
                             id="<?php echo $this->get_field_id('id-code'); ?>"
                             name="<?php echo $this->get_field_name('code'); ?>"
