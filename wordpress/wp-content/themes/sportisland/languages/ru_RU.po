@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-22 01:56+0300\n"
-"PO-Revision-Date: 2021-08-22 02:00+0300\n"
+"POT-Creation-Date: 2021-08-22 20:28+0300\n"
+"PO-Revision-Date: 2021-08-22 20:31+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -21,46 +21,114 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/SI_Widget_Contacts.php:12
+#: inc/sidebars/si_sidebars.php:7
+msgid "Contacts in Header"
+msgstr "Контакты в шапке"
+
+#: inc/sidebars/si_sidebars.php:14
+msgid "Contacts in Footer"
+msgstr "Контакты в футере"
+
+#: inc/sidebars/si_sidebars.php:21
+msgid "Sidebar in Footer Left"
+msgstr "Сайдбар слева в футере"
+
+#: inc/sidebars/si_sidebars.php:28
+msgid "Sidebar in Footer Center"
+msgstr "Сайдбар в центре в футере"
+
+#: inc/sidebars/si_sidebars.php:35
+msgid "Sidebar in Footer Right"
+msgstr "Сайдбар справа в футере"
+
+#: inc/sidebars/si_sidebars.php:42
+msgid "Map in Contact Page"
+msgstr "Сайдбар для карты на странице контактов"
+
+#: inc/sidebars/si_sidebars.php:49
+msgid "Info in Contact Page"
+msgstr "Сайдбар для информации на странице контактов"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:12
+msgid "SportIsland - Info Widget"
+msgstr "SportIsland - Виджет  для доп информации"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:13
+msgid "Show info under map "
+msgstr "Показывает доп информацию под картой"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:20
+msgid "Address"
+msgstr "Адрес"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:21
+msgid "Time"
+msgstr "Время"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:22
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:23
+msgid "E-Mail"
+msgstr "Электронный адрес"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:29
+msgid "Input text"
+msgstr "Введите текст"
+
+#: inc/widgets/SI_Widget_Contact_Info.php:41
+msgid "Select the option to display"
+msgstr "Выберите вариант отображения"
+
+#: inc/widgets/SI_Widget_Contacts.php:12
 msgid "SportIsland - Contacts Widget"
 msgstr "SportIsland - Виджет контактов"
 
-#: inc/SI_Widget_Contacts.php:13
+#: inc/widgets/SI_Widget_Contacts.php:13
 msgid "Show phone and address"
 msgstr "Показывает номер телефона и адрес"
 
-#: inc/SI_Widget_Contacts.php:23
+#: inc/widgets/SI_Widget_Contacts.php:23
 msgid "Input phone number"
 msgstr "Введите номер телефона"
 
-#: inc/SI_Widget_Contacts.php:35
+#: inc/widgets/SI_Widget_Contacts.php:35
 msgid "Input your address"
 msgstr "Введите адрес"
 
-#: inc/SI_Widget_Iframe.php:12
+#: inc/widgets/SI_Widget_Iframe.php:12
 msgid "SportIsland - Iframe Widget"
 msgstr "SportIsland - Виджет вставки iframe"
 
-#: inc/SI_Widget_Iframe.php:13
+#: inc/widgets/SI_Widget_Iframe.php:13
 msgid "Show iframe content"
 msgstr "Показывает содержимое iframe"
 
-#: inc/SI_Widget_Iframe.php:22
+#: inc/widgets/SI_Widget_Iframe.php:22
 msgid "Input iframe code"
 msgstr "Введите код iframe"
 
-#: inc/SI_Widget_Social_Link.php:109
+#: inc/widgets/SI_Widget_Social_Link.php:109
 msgid "SportIsland - Social Links Widget"
 msgstr "SportIsland - Виджет ссылок на соц сети"
 
-#: inc/SI_Widget_Social_Link.php:110
+#: inc/widgets/SI_Widget_Social_Link.php:110
 msgid "Show Social Links icons"
 msgstr "Показывает иконки социальных сетей"
 
-#: inc/SI_Widget_Social_Link.php:119
+#: inc/widgets/SI_Widget_Social_Link.php:119
 msgid "Enter link to social network"
 msgstr "Введите ссылку для социальной сети"
 
-#: inc/SI_Widget_Social_Link.php:131
+#: inc/widgets/SI_Widget_Social_Link.php:131
 msgid "Choose social network"
 msgstr "Выберите социальную сеть"
+
+#: inc/widgets/SI_Widget_Text.php:10
+msgid "SportIsland - Text Widget"
+msgstr "SportIsland - Текстовый виджет"
+
+#: inc/widgets/SI_Widget_Text.php:11
+msgid "Show simple text"
+msgstr "Выводит простой текст"
