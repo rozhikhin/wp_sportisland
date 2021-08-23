@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-22 20:28+0300\n"
-"PO-Revision-Date: 2021-08-22 20:31+0300\n"
+"POT-Creation-Date: 2021-08-23 21:07+0300\n"
+"PO-Revision-Date: 2021-08-23 21:08+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -18,8 +18,33 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: category.php:7
+msgid "Page of category "
+msgstr "Страница категории "
+
+#: category.php:7
+msgid " in SportIsland Sports Club blog"
+msgstr " в блоге сайта спортклуба SportIsland"
+
+#: inc/pages/breadcrumbs.php:4
+msgid "Main"
+msgstr "Главная"
+
+#: inc/pages/post-all.php:4
+msgid "Read post"
+msgstr "Читать статью"
+
+#: inc/pages/post-all.php:13
+msgid "More"
+msgstr "Подробнее"
+
+#: inc/pages/post-none.php:3
+msgid "no posts"
+msgstr "нет записей"
 
 #: inc/sidebars/si_sidebars.php:7
 msgid "Contacts in Header"
@@ -55,7 +80,7 @@ msgstr "SportIsland - Виджет  для доп информации"
 
 #: inc/widgets/SI_Widget_Contact_Info.php:13
 msgid "Show info under map "
-msgstr "Показывает доп информацию под картой"
+msgstr "Показывает доп информацию под картой "
 
 #: inc/widgets/SI_Widget_Contact_Info.php:20
 msgid "Address"
@@ -125,10 +150,28 @@ msgstr "Введите ссылку для социальной сети"
 msgid "Choose social network"
 msgstr "Выберите социальную сеть"
 
-#: inc/widgets/SI_Widget_Text.php:10
+#: inc/widgets/SI_Widget_Text.php:14
 msgid "SportIsland - Text Widget"
 msgstr "SportIsland - Текстовый виджет"
 
-#: inc/widgets/SI_Widget_Text.php:11
+#: inc/widgets/SI_Widget_Text.php:15
 msgid "Show simple text"
 msgstr "Выводит простой текст"
+
+#: index.php:8
+msgid "SportIsland Sports Club Blog Category Page"
+msgstr "Страница категорий блога на сайте спорт-клуба SportIsland"
+
+#: index.php:13
+msgid "last posts"
+msgstr "последние записи"
+
+#: index.php:50
+msgid "SportIsland Sports Club website"
+msgstr "Страница на сайте спорт-клуба SportIsland"
+
+#~ msgid "Blog"
+#~ msgstr "Блог"
+
+#~ msgid "Stretching"
+#~ msgstr "Растяжка"

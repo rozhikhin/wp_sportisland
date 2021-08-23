@@ -32,3 +32,20 @@ get_template_part('inc/sidebars/si_sidebars');
 get_template_part('inc/widgets/si_widgets');
 get_template_part('inc/shotcodes/si_shotcodes');
 
+/**
+ * Change More in posts excerpt
+ */
+add_filter('excerpt_more', function($more) {
+    return '...';
+});
+
+
+/**
+ * Remove site name from title
+ */
+add_filter( 'document_title_parts', function( $parts ){
+
+    if( isset($parts['site']) ) unset($parts['site']);
+
+    return $parts;
+});
