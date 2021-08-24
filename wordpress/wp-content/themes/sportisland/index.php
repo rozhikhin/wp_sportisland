@@ -17,31 +17,25 @@
         <?php else: ?>
             <?php get_template_part('inc/pages/post', 'none') ?>
         <?php endif; ?>
-        <section class="categories">
-            <div class="wrapper">
-                <h2 class="categories__h main-heading"> категории </h2>
-                <ul class="categories-list">
-                    <li class="category">
-                        <a href="category.html" class="category__link">
-                            <img src="img/blog__category_thmb1.jpg" alt="" class="category__thumb">
-                            <span class="category__name">Груповые занятия</span>
-                        </a>
-                    </li>
-                    <li class="category">
-                        <a href="category.html" class="category__link">
-                            <img src="img/blog__category_thmb2.jpg" alt="" class="category__thumb">
-                            <span class="category__name">Кардио</span>
-                        </a>
-                    </li>
-                    <li class="category">
-                        <a href="category.html" class="category__link">
-                            <img src="img/blog__category_thmb3.jpg" alt="" class="category__thumb">
-                            <span class="category__name">Йога</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <!--        Categories         -->
+        <?php $categories = get_categories(); ?>
+        <?php if($categories): ?>
+            <section class="categories">
+                <div class="wrapper">
+                    <h2 class="categories__h main-heading"> категории </h2>
+                    <ul class="categories-list">
+                        <?php foreach ($categories as $category): ?>
+                            <li class="category">
+                            <a href="<?php echo get_category_link($category->cat_ID); ?>" class="category__link">
+                                <img src="<?php _si_assets_path('img/blog__category_thmb1.jpg '); ?>" alt="" class="category__thumb">
+                                <span class="category__name"><?php echo $category->name; ?></span>
+                            </a>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </section>
+        <?php endif; ?>
     </main>
 
 <?php else: ?>

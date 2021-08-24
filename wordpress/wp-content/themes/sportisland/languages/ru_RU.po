@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-23 21:07+0300\n"
-"PO-Revision-Date: 2021-08-23 21:08+0300\n"
+"POT-Creation-Date: 2021-08-24 15:08+0300\n"
+"PO-Revision-Date: 2021-08-24 15:08+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -45,6 +45,10 @@ msgstr "Подробнее"
 #: inc/pages/post-none.php:3
 msgid "no posts"
 msgstr "нет записей"
+
+#: inc/post-types/services.php:5 inc/post-types/services.php:16
+msgid "Services"
+msgstr "Услуги"
 
 #: inc/sidebars/si_sidebars.php:7
 msgid "Contacts in Header"
@@ -166,9 +170,17 @@ msgstr "Страница категорий блога на сайте спор�
 msgid "last posts"
 msgstr "последние записи"
 
-#: index.php:50
+#: index.php:44
 msgid "SportIsland Sports Club website"
 msgstr "Страница на сайте спорт-клуба SportIsland"
+
+#: page-contact.php:18
+msgid "SportIsland Club Map"
+msgstr "Карта клуба SportIsland"
+
+#: page-contact.php:19
+msgid "Map"
+msgstr "Карта"
 
 #~ msgid "Blog"
 #~ msgstr "Блог"
