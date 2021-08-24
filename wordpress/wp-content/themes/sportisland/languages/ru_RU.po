@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-24 15:08+0300\n"
-"PO-Revision-Date: 2021-08-24 15:08+0300\n"
+"POT-Creation-Date: 2021-08-25 01:36+0300\n"
+"PO-Revision-Date: 2021-08-25 01:36+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -46,9 +46,277 @@ msgstr "Подробнее"
 msgid "no posts"
 msgstr "нет записей"
 
+#: inc/post-types/cards.php:5 inc/post-types/cards.php:16
+msgid "Cards"
+msgstr "Клубные карты"
+
+#: inc/post-types/cards.php:6
+msgid "Card"
+msgstr "Карта"
+
+#: inc/post-types/cards.php:7
+msgid "Add a new card"
+msgstr "Добавить новую карту"
+
+#: inc/post-types/cards.php:8
+msgid "Adding a new card"
+msgstr "Добавление новой карты"
+
+#: inc/post-types/cards.php:9
+msgid "Editing card"
+msgstr "Редактирование карты"
+
+#: inc/post-types/cards.php:10
+msgid "New card"
+msgstr "Новая карта"
+
+#: inc/post-types/cards.php:11
+msgid "View card"
+msgstr "Смотреть карту"
+
+#: inc/post-types/cards.php:12
+msgid "Search cards"
+msgstr "Искать карту"
+
+#: inc/post-types/cards.php:13
+msgid "No cards found"
+msgstr "Не найдено"
+
+#: inc/post-types/cards.php:14
+msgid "No cards found in trash"
+msgstr "Не найдено в корзине"
+
+#: inc/post-types/prices.php:5 inc/post-types/prices.php:16
+msgid "Prices"
+msgstr "Цены"
+
+#: inc/post-types/prices.php:6
+msgid "Price"
+msgstr "Прайс"
+
+#: inc/post-types/prices.php:7
+msgid "Add a new price"
+msgstr "Добавить новый прайс"
+
+#: inc/post-types/prices.php:8
+msgid "Adding a new price"
+msgstr "Добавление нового прайса"
+
+#: inc/post-types/prices.php:9
+msgid "Editing price"
+msgstr "Редактирование прайса"
+
+#: inc/post-types/prices.php:10
+msgid "New price"
+msgstr "Новый прайс"
+
+#: inc/post-types/prices.php:11
+msgid "View price"
+msgstr "Смотреть прайс"
+
+#: inc/post-types/prices.php:12
+msgid "Search prices"
+msgstr "Искать прайс"
+
+#: inc/post-types/prices.php:13
+msgid "No prices found"
+msgstr "Не найдено"
+
+#: inc/post-types/prices.php:14
+msgid "No prices found in trash"
+msgstr "Не найдено в корзине"
+
 #: inc/post-types/services.php:5 inc/post-types/services.php:16
 msgid "Services"
 msgstr "Услуги"
+
+#: inc/post-types/services.php:6
+msgid "Service"
+msgstr "Услуга"
+
+#: inc/post-types/services.php:7
+msgid "Add a new service"
+msgstr "Добавить новую услугу"
+
+#: inc/post-types/services.php:8
+msgid "Adding a new service"
+msgstr "Добавление новой услуги"
+
+#: inc/post-types/services.php:9
+msgid "Editing service"
+msgstr "Редактирование услуги"
+
+#: inc/post-types/services.php:10
+msgid "New service"
+msgstr "Новая услуга"
+
+#: inc/post-types/services.php:11
+msgid "View service"
+msgstr "Смотреть услугу"
+
+#: inc/post-types/services.php:12
+msgid "Search services"
+msgstr "Искать услугу"
+
+#: inc/post-types/services.php:13
+msgid "No services found"
+msgstr "Не найдено"
+
+#: inc/post-types/services.php:14
+msgid "No services found in trash"
+msgstr "Не найдено в корзине"
+
+#: inc/post-types/shedule.php:5 inc/post-types/shedule.php:14
+msgid "Week days"
+msgstr "Дни недели"
+
+#: inc/post-types/shedule.php:6
+msgid "Day of the week"
+msgstr "День недели"
+
+#: inc/post-types/shedule.php:7
+msgid "Search days of the week"
+msgstr "Найти день недели"
+
+#: inc/post-types/shedule.php:8
+msgid "All days of the week"
+msgstr "Все дни недели"
+
+#: inc/post-types/shedule.php:9
+msgid "View a day of the week"
+msgstr "Просмотр дня недели"
+
+#: inc/post-types/shedule.php:10
+msgid "Edit a day of the week"
+msgstr "Редактировать день недели"
+
+#: inc/post-types/shedule.php:11
+msgid "Update a day of the week"
+msgstr "Обновить день недели"
+
+#: inc/post-types/shedule.php:12
+msgid "Add a day of the week"
+msgstr "Добавить день недели"
+
+#: inc/post-types/shedule.php:13
+msgid "New day of the week"
+msgstr "Новый день недели"
+
+#: inc/post-types/shedule.php:23 inc/post-types/shedule.php:32
+msgid "Gyms"
+msgstr "Залы"
+
+#: inc/post-types/shedule.php:24
+msgid "Gym"
+msgstr "Зал"
+
+#: inc/post-types/shedule.php:25
+msgid "Search gyms"
+msgstr "Найти зал"
+
+#: inc/post-types/shedule.php:26
+msgid "All gyms"
+msgstr "Все залы"
+
+#: inc/post-types/shedule.php:27
+msgid "View a gym"
+msgstr "Просмотр зала"
+
+#: inc/post-types/shedule.php:28
+msgid "Edit a gym"
+msgstr "Редактировать зал"
+
+#: inc/post-types/shedule.php:29
+msgid "Update a gym"
+msgstr "Обновить зал"
+
+#: inc/post-types/shedule.php:30
+msgid "Add a gym"
+msgstr "Добавить  зал"
+
+#: inc/post-types/shedule.php:31
+msgid "New gym"
+msgstr "Новый зал"
+
+#: inc/post-types/shedule.php:41 inc/post-types/shedule.php:52
+msgid "Shedule"
+msgstr "Расписание"
+
+#: inc/post-types/shedule.php:42
+msgid "Training"
+msgstr "Занятие"
+
+#: inc/post-types/shedule.php:43
+msgid "Add a new training"
+msgstr "Добавить новое занятие"
+
+#: inc/post-types/shedule.php:44
+msgid "Adding a new training"
+msgstr "Добавление нового занятия"
+
+#: inc/post-types/shedule.php:45
+msgid "Editing a training"
+msgstr "Редактирование занятия"
+
+#: inc/post-types/shedule.php:46
+msgid "New training"
+msgstr "Новое заняттие"
+
+#: inc/post-types/shedule.php:47
+msgid "View training"
+msgstr "Смотреть занятие"
+
+#: inc/post-types/shedule.php:48
+msgid "Search trainings"
+msgstr "Искать занятие"
+
+#: inc/post-types/shedule.php:49
+msgid "No trainings found"
+msgstr "Не найдено"
+
+#: inc/post-types/shedule.php:50
+msgid "No trainings found in trash"
+msgstr "Не найдено в корзине"
+
+#: inc/post-types/trainers.php:5 inc/post-types/trainers.php:16
+msgid "Trainers"
+msgstr "Тренеры"
+
+#: inc/post-types/trainers.php:6
+msgid "Trainer"
+msgstr "Тренер"
+
+#: inc/post-types/trainers.php:7
+msgid "Add a new trainer"
+msgstr "Добавить нового тренера"
+
+#: inc/post-types/trainers.php:8
+msgid "Adding a new trainer"
+msgstr "Добавление нового тренера"
+
+#: inc/post-types/trainers.php:9
+msgid "Editing trainer"
+msgstr "Редактирование тренера"
+
+#: inc/post-types/trainers.php:10
+msgid "New trainer"
+msgstr "Новый тренер"
+
+#: inc/post-types/trainers.php:11
+msgid "View trainer"
+msgstr "Просмотр тренера"
+
+#: inc/post-types/trainers.php:12
+msgid "Search trainers"
+msgstr "Искать тренера"
+
+#: inc/post-types/trainers.php:13
+msgid "No trainers found"
+msgstr "Не найдено"
+
+#: inc/post-types/trainers.php:14
+msgid "No trainers found in trash"
+msgstr "Не найдено в корзине"
 
 #: inc/sidebars/si_sidebars.php:7
 msgid "Contacts in Header"
