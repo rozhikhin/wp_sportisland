@@ -32,6 +32,7 @@ get_template_part('inc/sidebars/si_sidebars');
 get_template_part('inc/widgets/si_widgets');
 get_template_part('inc/shotcodes/si_shotcodes');
 get_template_part('inc/post-types/post-types');
+get_template_part('inc/metaboxes/meta-boxes');
 
 /**
  * Change More in posts excerpt

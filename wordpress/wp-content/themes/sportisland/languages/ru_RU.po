@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-25 01:36+0300\n"
-"PO-Revision-Date: 2021-08-25 01:36+0300\n"
+"POT-Creation-Date: 2021-08-25 13:38+0300\n"
+"PO-Revision-Date: 2021-08-25 13:38+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -29,6 +29,10 @@ msgstr "Страница категории "
 #: category.php:7
 msgid " in SportIsland Sports Club blog"
 msgstr " в блоге сайта спортклуба SportIsland"
+
+#: inc/metaboxes/meta-boxes.php:8
+msgid "Number of likes"
+msgstr "Количество лайков"
 
 #: inc/pages/breadcrumbs.php:4
 msgid "Main"
