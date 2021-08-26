@@ -22,6 +22,7 @@ function _si_assets_path($path) {
 
 function si_scripts(){
     wp_enqueue_style('si-style', get_template_directory_uri() . '/assets/css/styles.css', [], '1.0');
+    wp_enqueue_style('si-style-2', get_template_directory_uri() . '/assets/css/sportisland.css', [], '1.0');
     wp_enqueue_script('si-script', get_template_directory_uri() . '/assets/js/js.js', [], '1.0', true);
 }
 

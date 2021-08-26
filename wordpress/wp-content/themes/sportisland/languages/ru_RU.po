@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-08-25 13:38+0300\n"
-"PO-Revision-Date: 2021-08-25 13:38+0300\n"
+"POT-Creation-Date: 2021-08-26 15:56+0300\n"
+"PO-Revision-Date: 2021-08-26 15:56+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -22,6 +22,19 @@ msgstr ""
 "esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: archive-services.php:16 archive-trainers.php:22
+msgid "sign up"
+msgstr "записаться"
+
+#: archive-services.php:17
+msgid "$ / month"
+msgstr "р./мес"
+
+#: archive-trainers.php:11 inc/post-types/trainers.php:5
+#: inc/post-types/trainers.php:16
+msgid "Trainers"
+msgstr "Тренеры"
+
 #: category.php:7
 msgid "Page of category "
 msgstr "Страница категории "
@@ -30,11 +43,11 @@ msgstr "Страница категории "
 msgid " in SportIsland Sports Club blog"
 msgstr " в блоге сайта спортклуба SportIsland"
 
-#: inc/metaboxes/meta-boxes.php:8
+#: inc/metaboxes/meta-boxes.php:9
 msgid "Number of likes"
 msgstr "Количество лайков"
 
-#: inc/pages/breadcrumbs.php:4
+#: inc/pages/breadcrumbs.php:3
 msgid "Main"
 msgstr "Главная"
 
@@ -282,10 +295,6 @@ msgstr "Не найдено"
 msgid "No trainings found in trash"
 msgstr "Не найдено в корзине"
 
-#: inc/post-types/trainers.php:5 inc/post-types/trainers.php:16
-msgid "Trainers"
-msgstr "Тренеры"
-
 #: inc/post-types/trainers.php:6
 msgid "Trainer"
 msgstr "Тренер"
@@ -438,21 +447,30 @@ msgstr "Выводит простой текст"
 msgid "SportIsland Sports Club Blog Category Page"
 msgstr "Страница категорий блога на сайте спорт-клуба SportIsland"
 
-#: index.php:13
+#: index.php:15
 msgid "last posts"
 msgstr "последние записи"
 
-#: index.php:44
+#: index.php:27
+msgid "categories"
+msgstr "категории"
+
+#: index.php:50
 msgid "SportIsland Sports Club website"
 msgstr "Страница на сайте спорт-клуба SportIsland"
 
-#: page-contact.php:18
+#: page-contact.php:20
 msgid "SportIsland Club Map"
 msgstr "Карта клуба SportIsland"
 
-#: page-contact.php:19
+#: page-contact.php:21
 msgid "Map"
 msgstr "Карта"
+
+#, fuzzy
+#~| msgid "Trainers"
+#~ msgid "trainers"
+#~ msgstr "Тренеры"
 
 #~ msgid "Blog"
 #~ msgstr "Блог"

@@ -3,7 +3,9 @@ get_header();
 ?>
 
 <main class="main-content">
-    <?php get_template_part('inc/pages/breadcrumbs') ?>
+    <div class="wrapper">
+        <?php get_template_part('inc/pages/breadcrumbs') ?>
+    </div>
     <?php if (have_posts()): ?>
         <?php while(have_posts()): the_post();?>
             <article class="main-article wrapper">

@@ -7,7 +7,9 @@
 ?>
 
 <main class="main-content">
-    <?php get_template_part('inc/pages/breadcrumbs') ?>
+    <div class="wrapper">
+        <?php get_template_part('inc/pages/breadcrumbs') ?>
+    </div>
     <section class="contacts">
         <?php if(have_posts()): ?>
             <?php while(have_posts()): the_post(); ?>

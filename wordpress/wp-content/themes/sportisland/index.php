@@ -6,7 +6,9 @@
 
     <main class="main-content">
         <h1 class="sr-only"><?php esc_html_e('SportIsland Sports Club Blog Category Page', 'sportisland') ?></h1>
-        <?php get_template_part('inc/pages/breadcrumbs') ?>
+        <div class="wrapper">
+            <?php get_template_part('inc/pages/breadcrumbs') ?>
+        </div>
         <?php if (have_posts()): ?>
             <section class="last-posts">
                 <div class="wrapper">
@@ -22,12 +24,16 @@
         <?php if($categories): ?>
             <section class="categories">
                 <div class="wrapper">
-                    <h2 class="categories__h main-heading"> категории </h2>
+                    <h2 class="categories__h main-heading"><?php esc_html_e('categories', 'sportisland'); ?></h2>
                     <ul class="categories-list">
                         <?php foreach ($categories as $category): ?>
                             <li class="category">
                             <a href="<?php echo get_category_link($category->cat_ID); ?>" class="category__link">
-                                <img src="<?php _si_assets_path('img/blog__category_thmb1.jpg '); ?>" alt="" class="category__thumb">
+                                <img
+                                     src="<?php echo get_field('category_thumb', 'category_' . $category->cat_ID)['url'] ?>"
+                                     alt="<?php echo get_field('category_thumb', 'category_' . $category->cat_ID)['alt'] ?>"
+                                     class="category__thumb"
+                                >
                                 <span class="category__name"><?php echo $category->name; ?></span>
                             </a>
                         </li>
