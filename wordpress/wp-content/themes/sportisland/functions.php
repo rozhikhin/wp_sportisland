@@ -52,3 +52,16 @@ add_filter( 'document_title_parts', function( $parts ){
 
     return $parts;
 });
+
+/**
+ * Function for debug
+ */
+function si_debug($var){
+    ob_start();
+    ?>
+        <pre>
+            <?php var_dump($var); ?>
+        </pre>
+    <?php
+        echo ob_get_clean();
+}
