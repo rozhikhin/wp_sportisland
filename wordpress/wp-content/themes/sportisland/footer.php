@@ -4,7 +4,11 @@
             <button class="modal__closer">
                 <span class="sr-only">Закрыть</span>
             </button>
-            <form action="#" class="modal-form__form">
+            <form
+                    method="post"
+                    action="<?php echo esc_url(admin_url('admin-post.php')); ?>"
+                    class="modal-form__form"
+            >
                 <h2 class="modal-content__h"> Отправить заявку </h2>
                 <p> Оставьте свои контакты и менеджер с Вами свяжется </p>
                 <p>
@@ -20,7 +24,7 @@
                     </label>
                 </p>
                 <button class="btn" type="submit">Отправить</button>
-                <input type="hidden" name="action" value="si-modal-form">
+                <input type="hidden" name="action" value="si-modal-form-card">
             </form>
         </section>
     </div>
@@ -30,7 +34,7 @@
         <div class="wrapper main-header__wrap">
             <p class="main-header__logolink">
                 <?php the_custom_logo(); ?>
-                <span class="slogan">Твой фитнес клуб всегда рядом!</span>
+                <span class="slogan"><?php echo get_option('si_slogan_option_field')?></span>
             </p>
             <?php
                 $locations = get_nav_menu_locations();
