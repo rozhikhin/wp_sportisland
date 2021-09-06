@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-09-01 16:34+0300\n"
-"PO-Revision-Date: 2021-09-01 16:53+0300\n"
+"POT-Creation-Date: 2021-09-06 21:46+0300\n"
+"PO-Revision-Date: 2021-09-06 21:46+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -43,9 +43,61 @@ msgstr "Страница категории "
 msgid " in SportIsland Sports Club blog"
 msgstr " в блоге сайта спортклуба SportIsland"
 
-#: inc/metaboxes/meta-boxes.php:9
+#: footer.php:5
+msgid "Close"
+msgstr "Закрыть"
+
+#: footer.php:12
+msgid "Send a request"
+msgstr "Отправить заявку"
+
+#: footer.php:13
+msgid "Leave your contacts and the manager will contact you"
+msgstr "Оставьте свои контакты и менеджер с Вами свяжется"
+
+#: footer.php:16 footer.php:17
+msgid "Your name"
+msgstr "Имя"
+
+#: footer.php:22 footer.php:23
+msgid "Your phone"
+msgstr "Телефон"
+
+#: footer.php:26
+msgid "Send"
+msgstr "Отправить"
+
+#: inc/forms/si-modal-form-card.php:8
+msgid "Order date"
+msgstr "Дата заявки"
+
+#: inc/forms/si-modal-form-card.php:9
+msgid "Client name"
+msgstr "Имя клиента"
+
+#: inc/forms/si-modal-form-card.php:10
+msgid "Client phone"
+msgstr "Телефон клиента"
+
+#: inc/forms/si-modal-form-card.php:11
+msgid "Client choice"
+msgstr "Выбор клиента"
+
+#: inc/forms/si-modal-form-card.php:29
+msgid "No data"
+msgstr "Нет данных"
+
+#: inc/likes/si-likes.php:11
 msgid "Number of likes"
 msgstr "Количество лайков"
+
+#: inc/likes/si-likes.php:51
+msgid "No Laik. Try again later."
+msgstr "Лайк не сохранился. Попробуйте позже."
+
+#: inc/likes/si-likes.php:70
+msgid "Likes"
+msgstr "Лайки"
 
 #: inc/options/si_slogan.php:8
 msgid "Slogan of your site"
@@ -105,6 +157,46 @@ msgstr "Не найдено"
 
 #: inc/post-types/cards.php:14
 msgid "No cards found in trash"
+msgstr "Не найдено в корзине"
+
+#: inc/post-types/orders.php:5 inc/post-types/orders.php:16
+msgid "Orders"
+msgstr "Заявки"
+
+#: inc/post-types/orders.php:6
+msgid "Order"
+msgstr "Заявка"
+
+#: inc/post-types/orders.php:7
+msgid "Add a new order"
+msgstr "Добавить новую заявку"
+
+#: inc/post-types/orders.php:8
+msgid "Adding a new order"
+msgstr "Добавление новой заявки"
+
+#: inc/post-types/orders.php:9
+msgid "Editing order"
+msgstr "Редактирование завки"
+
+#: inc/post-types/orders.php:10
+msgid "New order"
+msgstr "Новая заявка"
+
+#: inc/post-types/orders.php:11
+msgid "View order"
+msgstr "Смотреть заявку"
+
+#: inc/post-types/orders.php:12
+msgid "Search orders"
+msgstr "Искать заявку"
+
+#: inc/post-types/orders.php:13
+msgid "No orders found"
+msgstr "Не найдено"
+
+#: inc/post-types/orders.php:14
+msgid "No orders found in trash"
 msgstr "Не найдено в корзине"
 
 #: inc/post-types/prices.php:5 inc/post-types/prices.php:16

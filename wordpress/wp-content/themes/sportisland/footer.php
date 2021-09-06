@@ -2,28 +2,28 @@
     <div class="wrapper">
         <section class="modal-content modal-form" id="modal-form">
             <button class="modal__closer">
-                <span class="sr-only">Закрыть</span>
+                <span class="sr-only"><?php esc_html_e('Close', 'sportisland'); ?></span>
             </button>
             <form
                     method="post"
                     action="<?php echo esc_url(admin_url('admin-post.php')); ?>"
                     class="modal-form__form"
             >
-                <h2 class="modal-content__h"> Отправить заявку </h2>
-                <p> Оставьте свои контакты и менеджер с Вами свяжется </p>
+                <h2 class="modal-content__h"><?php esc_html_e('Send a request', 'sportisland'); ?></h2>
+                <p><?php esc_html_e('Leave your contacts and the manager will contact you', 'sportisland'); ?> </p>
                 <p>
                     <label>
-                        <span class="sr-only">Имя: </span>
-                        <input type="text" name="si-user-name" placeholder="Имя">
+                        <span class="sr-only"><?php esc_html_e('Your name', 'sportisland'); ?>:</span>
+                        <input type="text" name="si-user-name" placeholder="<?php esc_html_e('Your name', 'sportisland'); ?>">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span class="sr-only">Телефон:</span>
-                        <input type="text" name="si-user-phone" placeholder="Телефон" pattern="^\+{0,1}[0-9]{4,}$" required>
+                        <span class="sr-only"><?php esc_html_e('Your phone', 'sportisland'); ?>:</span>
+                        <input type="text" name="si-user-phone" placeholder="<?php esc_html_e('Your phone', 'sportisland'); ?>" pattern="^\+{0,1}[0-9]{4,}$" required>
                     </label>
                 </p>
-                <button class="btn" type="submit">Отправить</button>
+                <button class="btn" type="submit"><?php esc_html_e('Send', 'sportisland'); ?></button>
                 <input type="hidden" name="action" value="si-modal-form-card">
             </form>
         </section>

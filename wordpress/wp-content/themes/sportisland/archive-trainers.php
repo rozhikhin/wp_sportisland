@@ -19,7 +19,7 @@
                                         <h2 class="trainer__name"><?php the_title(); ?></h2>
                                         <p class="trainer__text"><?php the_field('trainer_desc'); ?></p>
                                     </div>
-                                    <a href="#" class="trainer__subscribe btn"><?php esc_html_e('sign up', 'sportisland') ?></a>
+                                    <a data-post-id="<?php echo $id ?>" href="#modal-form" class="trainer__subscribe btn btn_modal"><?php esc_html_e('sign up', 'sportisland') ?></a>
                                 </article>
                             </li>
                         <?php endwhile; ?>

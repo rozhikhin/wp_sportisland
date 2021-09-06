@@ -8,5 +8,6 @@ function si_register_post_types(){
     get_template_part('inc/post-types/shedule');
     get_template_part('inc/post-types/prices');
     get_template_part('inc/post-types/cards');
+    get_template_part('inc/post-types/orders');
 
 }

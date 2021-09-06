@@ -70,14 +70,51 @@ get_header();
         }
         let hasLike = getLikesInfo(postId);
         if (hasLike) {
-            likeBtn.classList.add('like_liked ')
+            likeBtn.classList.add('like_liked')
         }
 
         likeBtn.addEventListener('click', function (e){
             e.preventDefault();
+            likeBtn.disabled = true;
             let hasLike = getLikesInfo(postId);
             const data = new FormData();
-            data.append('action', 'post-likes')
+            data.append('action', 'post-likes');
+            op = hasLike ? 'minus' : 'plus';
+            data.append('op', op);
+            data.append('id', postId);
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', likeBtn.dataset.href);
+            xhr.send(data);
+            xhr.addEventListener('readystatechange', function (){
+                if (xhr.readyState !== 4) {
+                    return;
+                }
+                if (xhr.status === 200){
+                    likeBtn.querySelector('.like__count').innerText = xhr.responseText;
+                    let localData = localStorage.getItem('liked');
+                    let newData = '';
+                    if (hasLike) {
+                        newData = localData.split(',')
+                                .filter(function (id){
+                                    return id !== postId;
+                                })
+                                .join(',');
+                    } else {
+                        newData = localData.split(',')
+                            .filter(function (id) {
+                                return id !== '';
+                            })
+                            .concat(postId)
+                            .join(',')
+                    }
+                    localStorage.setItem('liked', newData);
+                    likeBtn.classList.toggle('like_liked');
+                } else {
+                    console.log(xhr.statusText);
+                }
+                likeBtn.disabled = false;
+            })
         })
     })
 </script>
