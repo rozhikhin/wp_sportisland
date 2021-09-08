@@ -15,6 +15,7 @@ register_post_type('cards', [
         'parent_item_colon'  => '', // для родителей (у древовидных типов)
         'menu_name'          => esc_html__('Cards', 'sportisland'), //'Клубные карты', // название меню
     ],
+    'description'         => esc_html__('Cards', 'sportisland'),
     'public'              => true,
     'menu_position'       => 20,
     'menu_icon'           => 'dashicons-money',

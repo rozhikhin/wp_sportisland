@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-09-06 21:46+0300\n"
-"PO-Revision-Date: 2021-09-06 21:46+0300\n"
+"POT-Creation-Date: 2021-09-08 21:55+0300\n"
+"PO-Revision-Date: 2021-09-08 21:56+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -67,25 +67,45 @@ msgstr "Телефон"
 msgid "Send"
 msgstr "Отправить"
 
-#: inc/forms/si-modal-form-card.php:8
+#: inc/forms/si-modal-form-card.php:9
 msgid "Order date"
 msgstr "Дата заявки"
 
-#: inc/forms/si-modal-form-card.php:9
+#: inc/forms/si-modal-form-card.php:10
 msgid "Client name"
 msgstr "Имя клиента"
 
-#: inc/forms/si-modal-form-card.php:10
+#: inc/forms/si-modal-form-card.php:11
 msgid "Client phone"
 msgstr "Телефон клиента"
 
-#: inc/forms/si-modal-form-card.php:11
+#: inc/forms/si-modal-form-card.php:12
 msgid "Client choice"
 msgstr "Выбор клиента"
 
-#: inc/forms/si-modal-form-card.php:29
+#: inc/forms/si-modal-form-card.php:43
+msgid "Client chose:"
+msgstr "Клиент выбрал:"
+
+#: inc/forms/si-modal-form-card.php:45
+msgid "from section:"
+msgstr "из раздела:"
+
+#: inc/forms/si-modal-form-card.php:49
 msgid "No data"
 msgstr "Нет данных"
+
+#: inc/forms/si-modal-form-card.php:61
+msgid "Empty"
+msgstr "Нет ID"
+
+#: inc/forms/si-modal-form-card.php:62
+msgid "Anonymous"
+msgstr "Аноним"
+
+#: inc/forms/si-modal-form-card.php:66
+msgid "Order №"
+msgstr "Заявка №"
 
 #: inc/likes/si-likes.php:11
 msgid "Number of likes"

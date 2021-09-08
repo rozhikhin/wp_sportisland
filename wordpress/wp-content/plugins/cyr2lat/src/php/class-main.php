@@ -25,6 +25,13 @@ use Cyr_To_Lat\Symfony\Polyfill\Mbstring\Mbstring;
 class Main {
 
 	/**
+	 * Request type.
+	 *
+	 * @var Request
+	 */
+	protected $request;
+
+	/**
 	 * Plugin settings.
 	 *
 	 * @var Settings
@@ -99,12 +106,20 @@ class Main {
 	 *
 	 * @var string
 	 */
-	private $wpml_locale;
+	protected $wpml_locale;
+
+	/**
+	 * WPML languages.
+	 *
+	 * @var array
+	 */
+	protected $wpml_languages;
 
 	/**
 	 * Main constructor.
 	 */
 	public function __construct() {
+		$this->request       = new Request();
 		$this->settings      = new Settings();
 		$this->admin_notices = new Admin_Notices();
 		$requirements        = new Requirements( $this->settings, $this->admin_notices );
@@ -123,7 +138,7 @@ class Main {
 			$this->admin_notices
 		);
 
-		if ( defined( 'WP_CLI' ) && constant( 'WP_CLI' ) ) {
+		if ( $this->request->is_cli() ) {
 			$this->cli = new WP_CLI( $this->converter );
 		}
 
@@ -136,7 +151,7 @@ class Main {
 	 * @noinspection PhpUndefinedClassInspection
 	 */
 	public function init() {
-		if ( defined( 'WP_CLI' ) && constant( 'WP_CLI' ) ) {
+		if ( $this->request->is_cli() ) {
 			try {
 				/**
 				 * Method WP_CLI::add_command() accepts class as callable.
@@ -160,16 +175,23 @@ class Main {
 		add_filter( 'sanitize_file_name', [ $this, 'sanitize_filename' ], 10, 2 );
 		add_filter( 'wp_insert_post_data', [ $this, 'sanitize_post_name' ], 10, 2 );
 		add_filter( 'pre_insert_term', [ $this, 'pre_insert_term_filter' ], PHP_INT_MAX, 2 );
-		add_filter( 'get_terms_args', [ $this, 'get_terms_args_filter' ], PHP_INT_MAX, 2 );
+
+		if ( ! $this->request->is_frontend() ) {
+			add_filter( 'get_terms_args', [ $this, 'get_terms_args_filter' ], PHP_INT_MAX, 2 );
+		}
 
 		if ( class_exists( Polylang::class ) ) {
 			add_filter( 'locale', [ $this, 'pll_locale_filter' ] );
 		}
 
 		if ( class_exists( SitePress::class ) ) {
+			$this->wpml_locale = $this->get_wpml_locale();
+
 			// We cannot use locale filter here
 			// as WPML reverts locale at PHP_INT_MAX in \WPML\ST\MO\Hooks\LanguageSwitch::filterLocale.
 			add_filter( 'ctl_locale', [ $this, 'wpml_locale_filter' ], - PHP_INT_MAX );
+
+			add_action( 'wpml_language_has_switched', [ $this, 'wpml_language_has_switched' ], 10, 3 );
 		}
 	}
 
@@ -282,14 +304,14 @@ class Main {
 	}
 
 	/**
-	 * Fix string encoding on MacOS.
+	 * Fix string encoding on macOS.
 	 *
 	 * @param string $string String.
+	 * @param array  $table  Conversion table.
 	 *
 	 * @return string
 	 */
-	private function fix_mac_string( $string ) {
-		$table     = $this->get_filtered_table();
+	private function fix_mac_string( $string, $table ) {
 		$fix_table = Conversion_Tables::get_fix_table_for_mac();
 
 		$fix = [];
@@ -330,15 +352,6 @@ class Main {
 	}
 
 	/**
-	 * Get transliteration table.
-	 *
-	 * @return array
-	 */
-	private function get_filtered_table() {
-		return (array) apply_filters( 'ctl_table', $this->settings->get_table() );
-	}
-
-	/**
 	 * Transliterate string using a table.
 	 *
 	 * @param string $string String.
@@ -346,9 +359,9 @@ class Main {
 	 * @return string
 	 */
 	public function transliterate( $string ) {
-		$table = $this->get_filtered_table();
+		$table = (array) apply_filters( 'ctl_table', $this->settings->get_table() );
 
-		$string = $this->fix_mac_string( $string );
+		$string = $this->fix_mac_string( $string, $table );
 		$string = $this->split_chinese_string( $string, $table );
 
 		return strtr( $string, $table );
@@ -485,6 +498,7 @@ class Main {
 		if ( false === $rest_locale ) {
 			return $locale;
 		}
+
 		if ( $rest_locale ) {
 			$this->pll_locale = $rest_locale;
 
@@ -609,16 +623,41 @@ class Main {
 			return $this->wpml_locale;
 		}
 
-		$language_code = wpml_get_current_language();
-		$languages     = apply_filters( 'wpml_active_languages', null );
-
-		if ( isset( $languages[ $language_code ] ) ) {
-			$this->wpml_locale = $languages[ $language_code ]['default_locale'];
-
-			return $this->wpml_locale;
-		}
-
 		return $locale;
+	}
+
+	/**
+	 * Get wpml locale.
+	 *
+	 * @return string|null
+	 */
+	protected function get_wpml_locale() {
+		$language_code        = wpml_get_current_language();
+		$this->wpml_languages = (array) apply_filters( 'wpml_active_languages', [] );
+
+		return (
+		isset( $this->wpml_languages[ $language_code ] ) ?
+			$this->wpml_languages[ $language_code ]['default_locale'] :
+			null
+		);
+	}
+
+	/**
+	 * Save switched locale.
+	 *
+	 * @param null|string $language_code     Language code to switch into.
+	 * @param bool|string $cookie_lang       Optionally also switch the cookie language to the value given.
+	 * @param string      $original_language Original language.
+	 *
+	 * @noinspection PhpUnusedParameterInspection
+	 */
+	public function wpml_language_has_switched( $language_code, $cookie_lang, $original_language ) {
+		$language_code = (string) $language_code;
+
+		$this->wpml_locale =
+			isset( $this->wpml_languages[ $language_code ] ) ?
+				$this->wpml_languages[ $language_code ]['default_locale'] :
+				null;
 	}
 
 	/**
