@@ -4,7 +4,8 @@
         "wpackagist-plugin/advanced-custom-fields": "^5.9",
         "wpackagist-plugin/contact-form-7": "^5.4",
         "wpackagist-plugin/cyr2lat": "^5.2",
-        "wpackagist-plugin/change-wp-admin-login": "^1.0"
+        "wpackagist-plugin/change-wp-admin-login": "^1.0",
+        "wpackagist-plugin/flamingo": "^2.2"
     },
     "repositories": [
         {

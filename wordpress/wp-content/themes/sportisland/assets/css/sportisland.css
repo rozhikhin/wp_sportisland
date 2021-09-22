@@ -10,3 +10,7 @@ button.like {
     cursor: pointer;
     font: inherit;
 }
+
+.wpcf7 .ajax-loader {
+    display: none;
+}

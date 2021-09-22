@@ -1,0 +1,16 @@
+
+.cookie-notify-block-admin-form label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.cookie-notify-block-admin-form fieldset label {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.cookie-notify-block-admin-form button.button-primary {
+    margin-top: 30px;
+}

@@ -1,0 +1,462 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2021-09-22 18:33+0300\n"
+"PO-Revision-Date: 2021-09-22 18:41+0300\n"
+"Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
+"Language-Team: ITWK\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Domain: _s\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:22
+msgid "We are uses cookies"
+msgstr "Мы используем cookies"
+
+#: index.php:56 index.php:57
+msgid "Cookie notify"
+msgstr "Уведомление о cookie"
+
+#~ msgid "sign up"
+#~ msgstr "записаться"
+
+#~ msgid "$ / month"
+#~ msgstr "р./мес"
+
+#~ msgid "Trainers"
+#~ msgstr "Тренеры"
+
+#~ msgid "Page of category "
+#~ msgstr "Страница категории "
+
+#~ msgid " in SportIsland Sports Club blog"
+#~ msgstr " в блоге сайта спортклуба SportIsland"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Send a request"
+#~ msgstr "Отправить заявку"
+
+#~ msgid "Leave your contacts and the manager will contact you"
+#~ msgstr "Оставьте свои контакты и менеджер с Вами свяжется"
+
+#~ msgid "Your name"
+#~ msgstr "Имя"
+
+#~ msgid "Your phone"
+#~ msgstr "Телефон"
+
+#~ msgid "Send"
+#~ msgstr "Отправить"
+
+#~ msgid "Order date"
+#~ msgstr "Дата заявки"
+
+#~ msgid "Client name"
+#~ msgstr "Имя клиента"
+
+#~ msgid "Client phone"
+#~ msgstr "Телефон клиента"
+
+#~ msgid "Client choice"
+#~ msgstr "Выбор клиента"
+
+#~ msgid "Client chose:"
+#~ msgstr "Клиент выбрал:"
+
+#~ msgid "from section:"
+#~ msgstr "из раздела:"
+
+#~ msgid "No data"
+#~ msgstr "Нет данных"
+
+#~ msgid "Empty"
+#~ msgstr "Нет ID"
+
+#~ msgid "Anonymous"
+#~ msgstr "Аноним"
+
+#~ msgid "Order №"
+#~ msgstr "Заявка №"
+
+#~ msgid "Number of likes"
+#~ msgstr "Количество лайков"
+
+#~ msgid "No Laik. Try again later."
+#~ msgstr "Лайк не сохранился. Попробуйте позже."
+
+#~ msgid "Likes"
+#~ msgstr "Лайки"
+
+#~ msgid "Slogan of your site"
+#~ msgstr "Слоган вашего сайта"
+
+#~ msgid "Main"
+#~ msgstr "Главная"
+
+#~ msgid "Read post"
+#~ msgstr "Читать статью"
+
+#~ msgid "More"
+#~ msgstr "Подробнее"
+
+#~ msgid "no posts"
+#~ msgstr "нет записей"
+
+#~ msgid "Cards"
+#~ msgstr "Клубные карты"
+
+#~ msgid "Card"
+#~ msgstr "Карта"
+
+#~ msgid "Add a new card"
+#~ msgstr "Добавить новую карту"
+
+#~ msgid "Adding a new card"
+#~ msgstr "Добавление новой карты"
+
+#~ msgid "Editing card"
+#~ msgstr "Редактирование карты"
+
+#~ msgid "New card"
+#~ msgstr "Новая карта"
+
+#~ msgid "View card"
+#~ msgstr "Смотреть карту"
+
+#~ msgid "Search cards"
+#~ msgstr "Искать карту"
+
+#~ msgid "No cards found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No cards found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Orders"
+#~ msgstr "Заявки"
+
+#~ msgid "Order"
+#~ msgstr "Заявка"
+
+#~ msgid "Add a new order"
+#~ msgstr "Добавить новую заявку"
+
+#~ msgid "Adding a new order"
+#~ msgstr "Добавление новой заявки"
+
+#~ msgid "Editing order"
+#~ msgstr "Редактирование завки"
+
+#~ msgid "New order"
+#~ msgstr "Новая заявка"
+
+#~ msgid "View order"
+#~ msgstr "Смотреть заявку"
+
+#~ msgid "Search orders"
+#~ msgstr "Искать заявку"
+
+#~ msgid "No orders found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No orders found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Prices"
+#~ msgstr "Цены"
+
+#~ msgid "Price"
+#~ msgstr "Прайс"
+
+#~ msgid "Add a new price"
+#~ msgstr "Добавить новый прайс"
+
+#~ msgid "Adding a new price"
+#~ msgstr "Добавление нового прайса"
+
+#~ msgid "Editing price"
+#~ msgstr "Редактирование прайса"
+
+#~ msgid "New price"
+#~ msgstr "Новый прайс"
+
+#~ msgid "View price"
+#~ msgstr "Смотреть прайс"
+
+#~ msgid "Search prices"
+#~ msgstr "Искать прайс"
+
+#~ msgid "No prices found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No prices found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Services"
+#~ msgstr "Услуги"
+
+#~ msgid "Service"
+#~ msgstr "Услуга"
+
+#~ msgid "Add a new service"
+#~ msgstr "Добавить новую услугу"
+
+#~ msgid "Adding a new service"
+#~ msgstr "Добавление новой услуги"
+
+#~ msgid "Editing service"
+#~ msgstr "Редактирование услуги"
+
+#~ msgid "New service"
+#~ msgstr "Новая услуга"
+
+#~ msgid "View service"
+#~ msgstr "Смотреть услугу"
+
+#~ msgid "Search services"
+#~ msgstr "Искать услугу"
+
+#~ msgid "No services found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No services found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Week days"
+#~ msgstr "Дни недели"
+
+#~ msgid "Day of the week"
+#~ msgstr "День недели"
+
+#~ msgid "Search days of the week"
+#~ msgstr "Найти день недели"
+
+#~ msgid "All days of the week"
+#~ msgstr "Все дни недели"
+
+#~ msgid "View a day of the week"
+#~ msgstr "Просмотр дня недели"
+
+#~ msgid "Edit a day of the week"
+#~ msgstr "Редактировать день недели"
+
+#~ msgid "Update a day of the week"
+#~ msgstr "Обновить день недели"
+
+#~ msgid "Add a day of the week"
+#~ msgstr "Добавить день недели"
+
+#~ msgid "New day of the week"
+#~ msgstr "Новый день недели"
+
+#~ msgid "Gyms"
+#~ msgstr "Залы"
+
+#~ msgid "Gym"
+#~ msgstr "Зал"
+
+#~ msgid "Search gyms"
+#~ msgstr "Найти зал"
+
+#~ msgid "All gyms"
+#~ msgstr "Все залы"
+
+#~ msgid "View a gym"
+#~ msgstr "Просмотр зала"
+
+#~ msgid "Edit a gym"
+#~ msgstr "Редактировать зал"
+
+#~ msgid "Update a gym"
+#~ msgstr "Обновить зал"
+
+#~ msgid "Add a gym"
+#~ msgstr "Добавить  зал"
+
+#~ msgid "New gym"
+#~ msgstr "Новый зал"
+
+#~ msgid "Shedule"
+#~ msgstr "Расписание"
+
+#~ msgid "Training"
+#~ msgstr "Занятие"
+
+#~ msgid "Add a new training"
+#~ msgstr "Добавить новое занятие"
+
+#~ msgid "Adding a new training"
+#~ msgstr "Добавление нового занятия"
+
+#~ msgid "Editing a training"
+#~ msgstr "Редактирование занятия"
+
+#~ msgid "New training"
+#~ msgstr "Новое заняттие"
+
+#~ msgid "View training"
+#~ msgstr "Смотреть занятие"
+
+#~ msgid "Search trainings"
+#~ msgstr "Искать занятие"
+
+#~ msgid "No trainings found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No trainings found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Trainer"
+#~ msgstr "Тренер"
+
+#~ msgid "Add a new trainer"
+#~ msgstr "Добавить нового тренера"
+
+#~ msgid "Adding a new trainer"
+#~ msgstr "Добавление нового тренера"
+
+#~ msgid "Editing trainer"
+#~ msgstr "Редактирование тренера"
+
+#~ msgid "New trainer"
+#~ msgstr "Новый тренер"
+
+#~ msgid "View trainer"
+#~ msgstr "Просмотр тренера"
+
+#~ msgid "Search trainers"
+#~ msgstr "Искать тренера"
+
+#~ msgid "No trainers found"
+#~ msgstr "Не найдено"
+
+#~ msgid "No trainers found in trash"
+#~ msgstr "Не найдено в корзине"
+
+#~ msgid "Contacts in Header"
+#~ msgstr "Контакты в шапке"
+
+#~ msgid "Contacts in Footer"
+#~ msgstr "Контакты в футере"
+
+#~ msgid "Sidebar in Footer Left"
+#~ msgstr "Сайдбар слева в футере"
+
+#~ msgid "Sidebar in Footer Center"
+#~ msgstr "Сайдбар в центре в футере"
+
+#~ msgid "Sidebar in Footer Right"
+#~ msgstr "Сайдбар справа в футере"
+
+#~ msgid "Map in Contact Page"
+#~ msgstr "Сайдбар для карты на странице контактов"
+
+#~ msgid "Info in Contact Page"
+#~ msgstr "Сайдбар для информации на странице контактов"
+
+#~ msgid "SportIsland - Info Widget"
+#~ msgstr "SportIsland - Виджет  для доп информации"
+
+#~ msgid "Show info under map "
+#~ msgstr "Показывает доп информацию под картой "
+
+#~ msgid "Address"
+#~ msgstr "Адрес"
+
+#~ msgid "Time"
+#~ msgstr "Время"
+
+#~ msgid "Phone number"
+#~ msgstr "Номер телефона"
+
+#~ msgid "E-Mail"
+#~ msgstr "Электронный адрес"
+
+#~ msgid "Input text"
+#~ msgstr "Введите текст"
+
+#~ msgid "Select the option to display"
+#~ msgstr "Выберите вариант отображения"
+
+#~ msgid "SportIsland - Contacts Widget"
+#~ msgstr "SportIsland - Виджет контактов"
+
+#~ msgid "Show phone and address"
+#~ msgstr "Показывает номер телефона и адрес"
+
+#~ msgid "Input phone number"
+#~ msgstr "Введите номер телефона"
+
+#~ msgid "Input your address"
+#~ msgstr "Введите адрес"
+
+#~ msgid "SportIsland - Iframe Widget"
+#~ msgstr "SportIsland - Виджет вставки iframe"
+
+#~ msgid "Show iframe content"
+#~ msgstr "Показывает содержимое iframe"
+
+#~ msgid "Input iframe code"
+#~ msgstr "Введите код iframe"
+
+#~ msgid "SportIsland - Social Links Widget"
+#~ msgstr "SportIsland - Виджет ссылок на соц сети"
+
+#~ msgid "Show Social Links icons"
+#~ msgstr "Показывает иконки социальных сетей"
+
+#~ msgid "Enter link to social network"
+#~ msgstr "Введите ссылку для социальной сети"
+
+#~ msgid "Choose social network"
+#~ msgstr "Выберите социальную сеть"
+
+#~ msgid "SportIsland - Text Widget"
+#~ msgstr "SportIsland - Текстовый виджет"
+
+#~ msgid "Show simple text"
+#~ msgstr "Выводит простой текст"
+
+#~ msgid "SportIsland Sports Club Blog Category Page"
+#~ msgstr "Страница категорий блога на сайте спорт-клуба SportIsland"
+
+#~ msgid "last posts"
+#~ msgstr "последние записи"
+
+#~ msgid "categories"
+#~ msgstr "категории"
+
+#~ msgid "SportIsland Sports Club website"
+#~ msgstr "Страница на сайте спорт-клуба SportIsland"
+
+#~ msgid "SportIsland Club Map"
+#~ msgstr "Карта клуба SportIsland"
+
+#~ msgid "Map"
+#~ msgstr "Карта"
+
+#, fuzzy
+#~| msgid "Trainers"
+#~ msgid "trainers"
+#~ msgstr "Тренеры"
+
+#~ msgid "Blog"
+#~ msgstr "Блог"
+
+#~ msgid "Stretching"
+#~ msgstr "Растяжка"
