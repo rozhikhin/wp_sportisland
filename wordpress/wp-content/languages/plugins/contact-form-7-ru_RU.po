@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-08 18:19:01+0000\n"
+"PO-Revision-Date: 2021-08-29 18:45:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,170 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: admin/admin.php:65 admin/admin.php:516
+msgid "Integration with External API"
+msgstr "Интеграция с внешним API"
+
+#: modules/sendinblue/contact-form-properties.php:281
+msgid "Manage your email templates"
+msgstr "Управление шаблонами электронной почты"
+
+#: modules/sendinblue/contact-form-properties.php:266
+msgid "You have no active email template yet."
+msgstr "У вас еще нет активного шаблона электронной почты."
+
+#: modules/sendinblue/contact-form-properties.php:246
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Выберите &mdash;"
+
+#: modules/sendinblue/contact-form-properties.php:233
+msgid "Select an email template:"
+msgstr "Выберите шаблон электронной почты:"
+
+#: modules/sendinblue/contact-form-properties.php:216
+msgid "Send a welcome email to new contacts"
+msgstr "Отправить приветственное письмо новым контактам"
+
+#: modules/sendinblue/contact-form-properties.php:198
+#: modules/sendinblue/contact-form-properties.php:207
+msgid "Welcome email"
+msgstr "Приветственное письмо"
+
+#: modules/sendinblue/contact-form-properties.php:188
+#: modules/sendinblue/contact-form-properties.php:282
+msgid "(opens in a new tab)"
+msgstr "(откроется в новой вкладке)"
+
+#: modules/sendinblue/contact-form-properties.php:187
+msgid "Manage your contact lists"
+msgstr "Управление списком контактов"
+
+#: modules/sendinblue/contact-form-properties.php:172
+msgid "You have no contact list yet."
+msgstr "У вас еще нет списка контактов."
+
+#: modules/sendinblue/contact-form-properties.php:148
+msgid "Select lists to which contacts are added:"
+msgstr "Выберите списки, в которые добавляются контакты:"
+
+#: modules/sendinblue/contact-form-properties.php:131
+msgid "Add form submitters to your contact lists"
+msgstr "Добавьте отправителей форм в свои списки контактов"
+
+#: modules/sendinblue/contact-form-properties.php:113
+#: modules/sendinblue/contact-form-properties.php:122
+msgid "Contact lists"
+msgstr "Списки контактов"
+
+#: modules/sendinblue/contact-form-properties.php:90
+msgid "You can set up the Sendinblue integration here. For details, see %s."
+msgstr "Здесь Вы можете настроить интеграцию с SendinBlue. Подробности %s."
+
+#: modules/sendinblue/service.php:207
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: modules/sendinblue/service.php:203
+msgctxt "API keys"
+msgid "Remove key"
+msgstr "Удалить ключ"
+
+#: modules/sendinblue/service.php:182
+msgid "API key"
+msgstr "Ключ API"
+
+#: modules/sendinblue/service.php:168
+msgid "Setup integration"
+msgstr "Настроить интеграцию"
+
+#: modules/sendinblue/service.php:158
+msgid "Sendinblue is active on this site."
+msgstr "SendinBlue активен на этом сайте."
+
+#: modules/sendinblue/contact-form-properties.php:94
+#: modules/sendinblue/service.php:151
+msgid "Sendinblue integration"
+msgstr "Интеграция с SendinBlue"
+
+#: modules/sendinblue/contact-form-properties.php:93
+#: modules/sendinblue/service.php:150
+msgid "https://contactform7.com/sendinblue-integration/"
+msgstr "https://contactform7.com/sendinblue-integration/"
+
+#: modules/sendinblue/service.php:148
+msgid "Store and organize your contacts while protecting user privacy on Sendinblue, the leading CRM & email marketing platform in Europe. Sendinblue offers unlimited contacts and advanced marketing features. For details, see %s."
+msgstr "Храните и упорядочивайте свои контакты, защищая конфиденциальность пользователей, на SendinBlue, ведущей платформе CRM и email-маркетинга в Европе. SendinBlue предлагает неограниченное количество контактов и расширенные маркетинговые функции. Подробнее см. в разделе %s."
+
+#: modules/sendinblue/service.php:126
+msgid "You have not been authenticated. Make sure the provided API key is correct."
+msgstr "Вы не аутентифицированы. Проверьте актуальность предоставленного API ключа."
+
+#: modules/sendinblue/contact-form-properties.php:102
+#: modules/sendinblue/contact-form-properties.php:296
+#: modules/sendinblue/service.php:30
+msgid "Sendinblue"
+msgstr "SendinBlue"
+
+#: includes/mail.php:180
+msgid "Failed to attach a file. The total file size exceeds the limit of 25 megabytes."
+msgstr "Невозможно прикрепить файл. Максимальный размер файла 25 мегабайт."
+
+#. translators: %s: Attachment file path.
+#: includes/mail.php:159
+msgid "Failed to attach a file. %s is not a readable file."
+msgstr "Не удалось прикрепить файл. %s не читается."
+
+#. translators: %s: Attachment file path.
+#: includes/mail.php:144
+msgid "Failed to attach a file. %s is not in the allowed directory."
+msgstr "Невозможно прикрепить файл. %s отсутствует в папке."
+
+#: includes/contact-form-template.php:42
+msgid "Submit"
+msgstr "Отправить"
+
+#: includes/contact-form-template.php:37
+msgid "(optional)"
+msgstr "(не обязательно)"
+
+#: admin/includes/welcome-panel.php:40
+msgid "disallowed list"
+msgstr "список запрещенных"
+
+#: modules/disallowed-list.php:35
+msgid "Disallowed words (%s) are used."
+msgstr "Использованы запрещенные слова (%s)"
+
+#: modules/disallowed-list.php:32
+msgid "Disallowed words are used."
+msgstr "Использованы запрещенные слова."
+
+#: includes/contact-form-functions.php:142
+msgid "Not Found"
+msgstr "Не найдено"
+
+#. translators: Developer debugging message. 1: PHP function name, 2:
+#. Explanatory message, 3: Contact Form 7 version number.
+#: includes/functions.php:398
+msgid "%1$s was called incorrectly. %2$s %3$s"
+msgstr "%1$s был вызван неправильно. %2$s %3$s"
+
+#. translators: %s: Contact Form 7 version number.
+#: includes/functions.php:390
+msgid "(This message was added in Contact Form 7 version %s.)"
+msgstr "(Это сообщение было добавлено в Contact Form 7 версии %s.)"
+
+#: includes/special-mail-tags.php:22 includes/special-mail-tags.php:97
+#: includes/special-mail-tags.php:164 includes/special-mail-tags.php:218
+#: modules/flamingo.php:285
+msgid "The fourth parameter ($mail_tag) must be an instance of the WPCF7_MailTag class."
+msgstr "Четвертый параметр ($mail_tag) должен быть экземпляром класса WPCF7_MailTag."
+
+#. translators: 1: date, 2: time
+#: admin/includes/class-contact-forms-list-table.php:234
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
 
 #: admin/edit-contact-form.php:197
 msgid "docs"
@@ -140,11 +304,15 @@ msgstr "Секрет приложения (App Secret)"
 
 #: modules/constant-contact.php:519
 msgid "API Key"
-msgstr "API ключ"
+msgstr "Ключ API"
 
 #: modules/constant-contact.php:507 modules/recaptcha/recaptcha.php:470
 msgid "Setup Integration"
 msgstr "Настройки интеграции"
+
+#: modules/constant-contact.php:490
+msgid "Constant Contact integration"
+msgstr "Интеграция с Constant Contact"
 
 #: modules/constant-contact.php:486
 msgid "https://contactform7.com/constant-contact-integration/"
@@ -157,6 +325,10 @@ msgstr "Модуль интеграции Constant Contact позволяет о
 #: modules/constant-contact.php:236
 msgid "Constant Contact"
 msgstr "Constant Contact"
+
+#: modules/constant-contact.php:9
+msgid "Email marketing"
+msgstr "Маркетинг по электронной почте"
 
 #: includes/config-validator.php:649
 msgid "It is not allowed to use files outside the wp-content directory."
@@ -261,7 +433,7 @@ msgstr "Как исправить?"
 
 #: admin/includes/welcome-panel.php:63
 msgid "Your donation will help encourage and support the plugin&#8217;s continued development and better user support."
-msgstr "Ваше пожертвование поможет дальше развивать плагин и улучшать качеств помощи пользователям"
+msgstr "Ваше пожертвование поможет дальше развивать плагин и улучшать качеств помощи пользователям."
 
 #: admin/includes/welcome-panel.php:58
 msgid "making a donation"
@@ -274,7 +446,7 @@ msgstr "Если вам нравится использовать Contact Form 7
 
 #: admin/includes/welcome-panel.php:50
 msgid "It is hard to continue development and support for this plugin without contributions from users like you."
-msgstr "Мы не смогли бы работать над плагином без пожертвований простых пользователей, таких как вы. "
+msgstr "Мы не смогли бы работать над плагином без пожертвований простых пользователей, таких как вы."
 
 #: includes/contact-form.php:325 includes/contact-form.php:753
 msgid "This contact form is available only for logged in users."
@@ -317,7 +489,7 @@ msgstr "У вас нет доступа к контактной форме."
 
 #: includes/config-validator.php:631
 msgid "Attachment file does not exist at %path%."
-msgstr "По указанному пути %path% файл вложения не существует. "
+msgstr "По указанному %path% файл вложения не существует."
 
 #: includes/config-validator.php:507
 msgid "Invalid mailbox syntax is used in the %name% field."
@@ -391,7 +563,7 @@ msgstr "Flamingo"
 #. translators: %s: link labeled 'Flamingo'
 #: admin/includes/welcome-panel.php:74
 msgid "Install a message storage plugin before this happens to you. %s saves all messages through contact forms into the database. Flamingo is a free WordPress plugin created by the same author as Contact Form 7."
-msgstr "Установите плагин хранения сообщений, прежде чем это случится с вами. %s сохраняет все сообщения в базу данных, что проходят через контактные формы. Flamingo это бесплатный плагин для WordPress, созданный тем же автором, что и Contact Form 7"
+msgstr "Установите плагин хранения сообщений, прежде чем это случится с вами. %s сохраняет все сообщения в базу данных, что проходят через контактные формы. Flamingo это бесплатный плагин для WordPress, созданный тем же автором, что и Contact Form 7."
 
 #: admin/includes/welcome-panel.php:69
 msgid "Contact Form 7 doesn&#8217;t store submitted messages anywhere. Therefore, you may lose important messages forever if your mail server has issues or you make a mistake in mail configuration."
@@ -789,6 +961,11 @@ msgstr "Число меньше минимального предела"
 msgid "Number format that the sender entered is invalid"
 msgstr "Отправителем введён некорректный числовой формат"
 
+#. translators: %s: the path of the temporary folder
+#: includes/file.php:357
+msgid "This contact form has file uploading fields, but the temporary folder for the files (%s) does not exist or is not writable. You can create the folder or change its permission manually."
+msgstr "Эта контактная форма содержит поля загрузки файлов, но временная папка для файлов (%s) не существует или закрыта для записи. Вы можете создать эту папку или изменить разрешения вручную."
+
 #: modules/file.php:182
 msgid "To attach the file uploaded through this field to mail, you need to insert the corresponding mail-tag (%s) into the File Attachments field on the Mail tab."
 msgstr "Чтобы прикрепить файл загруженный через это поле к почте, вам нужно вставить соответствующий почтовый-тег (%s) в поле прикрепления файлов на вкладке Почта."
@@ -899,7 +1076,7 @@ msgstr "Оберните каждый элемент с элементом ме�
 
 #: modules/checkbox.php:269
 msgid "Put a label first, a checkbox last"
-msgstr "Поставьте метку сначала, после - чекбокс."
+msgstr "Поместите метку первой, а флажок последним"
 
 #: modules/checkbox.php:268 modules/select.php:202
 msgid "One option per line."
@@ -918,6 +1095,10 @@ msgstr "Обязательное поле"
 #: modules/textarea.php:160 modules/textarea.php:163
 msgid "Field type"
 msgstr "Тип поля"
+
+#: modules/checkbox.php:236 modules/select.php:172
+msgid "Checkboxes, radio buttons and menus"
+msgstr "Флажки, переключатели и меню"
 
 #: modules/checkbox.php:236 modules/select.php:172
 msgid "https://contactform7.com/checkboxes-radio-buttons-and-menus/"
@@ -1099,6 +1280,18 @@ msgstr "От: %s"
 msgid "Send"
 msgstr "Отправить"
 
+#: includes/contact-form-template.php:41
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+#: includes/contact-form-template.php:39
+msgid "Your email"
+msgstr "Ваш e-mail"
+
+#: includes/contact-form-template.php:38
+msgid "Your name"
+msgstr "Ваше имя"
+
 #. translators: %s: title of form-tag like 'email' or 'checkboxes'
 #: admin/includes/tag-generator.php:46
 msgid "Form-tag Generator: %s"
@@ -1134,7 +1327,7 @@ msgstr "Не смотря на то, что тег формы имеет сло�
 
 #: admin/includes/help-tabs.php:75
 msgid "A form-tag is a short code enclosed in square brackets used in a form content. A form-tag generally represents an input field, and its components can be separated into four parts: type, name, options, and values. Contact Form 7 supports several types of form-tags including text fields, number fields, date fields, checkboxes, radio buttons, menus, file-uploading fields, CAPTCHAs, and quiz fields."
-msgstr "Тег формы это короткий код заключенный в квадратные скобки, используемый в содержимом формы. "
+msgstr "Тег формы - это заключенный в квадратные скобки сокращенный код, используемый в содержании формы. Тег формы обычно представляет собой поле ввода, и его компоненты можно разделить на четыре части: тип, имя, параметры и значения. Контактная форма 7 поддерживает несколько типов тегов формы, включая текстовые поля, числовые поля, поля даты, флажки, переключатели, меню, поля загрузки файлов, CAPTCHA и поля викторины."
 
 #: admin/includes/help-tabs.php:73
 msgid "<strong>Additional Settings</strong> provides a place where you can customize the behavior of this contact form by adding code snippets."
@@ -1220,6 +1413,10 @@ msgstr "Исключить вывод строк с пустыми тегами 
 #: admin/includes/editor.php:181
 msgid "Message body"
 msgstr "Тело письма"
+
+#: admin/includes/editor.php:172
+msgid "Additional headers"
+msgstr "Дополнительные заголовки"
 
 #: admin/includes/editor.php:163 includes/contact-form-template.php:40
 msgid "Subject"
@@ -1373,6 +1570,10 @@ msgstr "https://contactform7.com/save-submitted-messages-with-flamingo/"
 #: admin/includes/welcome-panel.php:31
 msgid "https://contactform7.com/spam-filtering-with-akismet/"
 msgstr "https://contactform7.com/spam-filtering-with-akismet/"
+
+#: admin/includes/editor.php:129
+msgid "Setting up mail"
+msgstr "Настройка почты"
 
 #: admin/includes/editor.php:128
 msgid "https://contactform7.com/setting-up-mail/"

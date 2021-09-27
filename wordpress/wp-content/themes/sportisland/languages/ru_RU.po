@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-09-08 21:55+0300\n"
-"PO-Revision-Date: 2021-09-08 22:36+0300\n"
+"POT-Creation-Date: 2021-09-27 21:42+0300\n"
+"PO-Revision-Date: 2021-09-27 21:43+0300\n"
 "Last-Translator: Alexander Rozhikhin <rozhihin@gmail.com>\n"
 "Language-Team: ITWK\n"
 "Language: ru\n"
@@ -29,6 +29,10 @@ msgstr "записаться"
 #: archive-services.php:17
 msgid "$ / month"
 msgstr "р./мес"
+
+#: archive-shedule.php:8
+msgid "schedule"
+msgstr "расписание "
 
 #: archive-trainers.php:11 inc/post-types/trainers.php:5
 #: inc/post-types/trainers.php:16
@@ -140,6 +144,7 @@ msgid "no posts"
 msgstr "нет записей"
 
 #: inc/post-types/cards.php:5 inc/post-types/cards.php:16
+#: inc/post-types/cards.php:18
 msgid "Cards"
 msgstr "Клубные карты"
 
