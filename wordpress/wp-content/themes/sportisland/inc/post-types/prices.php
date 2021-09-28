@@ -19,7 +19,8 @@ register_post_type('prices', [
     'menu_position'       => 20,
     'menu_icon'           => 'dashicons-media-spreadsheet',
     'hierarchical'        => false,
-    'supports'            => [ 'title' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    'show_in_rest'        => true,
+    'supports'            => [ 'title', 'editor' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
     'taxonomies'          => [],
     'has_archive'         => true,
 ]);

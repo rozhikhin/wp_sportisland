@@ -15,108 +15,75 @@ get_header();
         </ul>
         <section class="prices">
             <h2 class="main-heading prices__h">Цены</h2>
-            <table>
-                <thead>
-                <tr>
-                    <td>Услуга</td>
-                    <td>Разовая покупка</td>
-                    <td>1 месяц</td>
-                    <td>6 месяцев</td>
-                    <td>12 месяцев</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td> Фитнес </td>
-                    <td> 200 <span> р.- </span>
-                    </td>
-                    <td> 900 <span> р.- </span>
-                    </td>
-                    <td> 4800 <span> р.- </span>
-                    </td>
-                    <td> 9000 <span> р.- </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Тренажерный зал </td>
-                    <td> 200 <span> р.- </span>
-                    </td>
-                    <td> 900 <span> р.- </span>
-                    </td>
-                    <td> 4800 <span> р.- </span>
-                    </td>
-                    <td> 9000 <span> р.- </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Женский фитнес </td>
-                    <td> 200 <span> р.- </span>
-                    </td>
-                    <td> 1100 <span> р.- </span>
-                    </td>
-                    <td> 6000 <span> р.- </span>
-                    </td>
-                    <td> 11000 <span> р.- </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Бокс </td>
-                    <td> 200 <span> р.- </span>
-                    </td>
-                    <td> 900 <span> р.- </span>
-                    </td>
-                    <td> 4800 <span> р.- </span>
-                    </td>
-                    <td> 9000 <span> р.- </span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+            <?php
+                if (have_posts()) {
+	                while(have_posts()) {
+	                    the_post();
+	                    if (!get_field('prices_show')) {
+	                        continue;
+                        }
+		                the_content();
+                    }
+                } else {
+	                get_template_part( 'inc/pages/post', 'none' );
+                }
+            ?>
         </section>
-        <section class="cards">
-            <h2 class="page-heading cards__h"> клубные карты </h2>
-            <ul class="cards__list row">
-                <li class="card">
-                    <h3 class="card__name"> полный день </h3>
-                    <p class="card__time"> 7:00 &ndash; 22:00 </p>
-                    <p class="card__price price"> 3200 <span class="price__unit">р.-/мес.</span>
-                    </p>
-                    <ul class="card__features">
-                        <li class="card__feature">Безлимит посещений клуба</li>
-                        <li class="card__feature">Вводный инструктаж</li>
-                        <li class="card__feature">Групповые занятия</li>
-                        <li class="card__feature">Сауна</li>
+	    <?php
+
+            $query = new WP_Query([
+                'numberposts' => -1,
+                'post_type' => 'cards',
+                'meta_key' => 'card_order',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC'
+            ]);
+
+            if ($query->have_posts()):
+            ?>
+            <section class="cards cards">
+                    <h2 class="main-heading cards__h"> клубные карты </h2>
+                    <ul class="cards__list row">
+					    <?php
+					    while ($query->have_posts()):
+						    $query->the_post();
+						    $benefits_list = mb_split("\n", get_field('card_benefits'));
+						    $card_bg = get_field('card_bg');
+						    ?>
+                            <li
+                                    class="card <?php echo get_field( 'card_profit' ) ? 'card_profitable' : '' ?>"
+							    <?php if($card_bg): ?>
+                                    style="background-image: url(<?php echo $card_bg ?>)"
+							    <?php endif; ?>
+                            >
+                                <h3 class="card__name"> <?php the_title() ?> </h3>
+                                <p class="card__time">
+								    <?php the_field('card_time_start'); ?>
+                                    &ndash;
+								    <?php the_field('card_time_end'); ?>
+                                </p>
+                                <p class="card__price price">
+								    <?php the_field('card_price'); ?>
+                                    <span class="price__unit" aria-label="рублей в месяц">
+                                    р.-/мес.
+                                </span>
+                                </p>
+                                <ul class="card__features">
+								    <?php foreach ($benefits_list as $benefits_item): ?>
+                                        <li class="card__feature" >
+										    <?php echo $benefits_item ?>
+                                        </li>
+								    <?php endforeach; ?>
+                                </ul>
+                                <a data-post-id="<?php echo $id ?>" href="#modal-form" class="card__buy btn btn_modal">купить</a>
+                            </li>
+					    <?php
+					    endwhile;
+					    wp_reset_postdata();
+					    ?>
                     </ul>
-                    <a href="#" class="card__buy btn">купить</a>
-                </li>
-                <li class="card card_profitable">
-                    <h3 class="card__name"> полный день </h3>
-                    <p class="card__time"> 7:00 &ndash; 22:00 </p>
-                    <p class="card__price price"> 3200 <span class="price__unit">р.-/мес.</span>
-                    </p>
-                    <ul class="card__features">
-                        <li class="card__feature">Безлимит посещений клуба</li>
-                        <li class="card__feature">Вводный инструктаж</li>
-                        <li class="card__feature">Групповые занятия</li>
-                        <li class="card__feature">Сауна</li>
-                    </ul>
-                    <a href="#" class="card__buy btn">купить</a>
-                </li>
-                <li class="card">
-                    <h3 class="card__name"> полный день </h3>
-                    <p class="card__time"> 7:00 &ndash; 22:00 </p>
-                    <p class="card__price price"> 3200 <span class=" price__unit">р.-/мес.</span>
-                    </p>
-                    <ul class="card__features">
-                        <li class="card__feature">Безлимит посещений клуба</li>
-                        <li class="card__feature">Вводный инструктаж</li>
-                        <li class="card__feature">Групповые занятия</li>
-                        <li class="card__feature">Сауна</li>
-                    </ul>
-                    <a href="#" class="card__buy btn">купить</a>
-                </li>
-            </ul>
-        </section>
+            </section>
+	    <?php endif; ?>
     </div>
 </main>
 

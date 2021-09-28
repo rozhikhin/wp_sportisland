@@ -76,6 +76,7 @@
     <?php endif; ?>
 
     <?php
+
         $query = new WP_Query([
             'numberposts' => -1,
             'post_type' => 'cards',
@@ -83,52 +84,52 @@
             'orderby' => 'meta_value_num',
             'order' => 'ASC'
         ]);
-    ?>
-    <?php if ($query->have_posts()): ?>
-        <section class="cards cards_index">
-            <div class="wrapper">
-                <h2 class="main-heading cards__h"> клубные карты </h2>
-                <ul class="cards__list row">
-                    <?php
-                        while ($query->have_posts()):
-                            $query->the_post();
-	                        $benefits_list = mb_split("\n", get_field('card_benefits'));
-	                        $card_bg = get_field('card_bg');
-	                        ?>
-                            <li
-                                    class="card <?php echo get_field( 'card_profit' ) ? 'card_profitable' : '' ?>"
-                                    <?php if($card_bg): ?>
-                                        style="background-image: url(<?php echo $card_bg ?>)"
-                                    <?php endif; ?>
-                            >
-                            <h3 class="card__name"> <?php the_title() ?> </h3>
-                            <p class="card__time">
-                                <?php the_field('card_time_start'); ?>
-                                &ndash;
-	                            <?php the_field('card_time_end'); ?>
-                            </p>
-                            <p class="card__price price">
-                                <?php the_field('card_price'); ?>
-                                <span class="price__unit" aria-label="рублей в месяц">
-                                    р.-/мес.
-                                </span>
-                            </p>
-                            <ul class="card__features">
-	                            <?php foreach ($benefits_list as $benefits_item): ?>
-                                    <li class="card__feature" >
-                                        <?php echo $benefits_item ?>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                            <a data-post-id="<?php echo $id ?>" href="#modal-form" class="card__buy btn btn_modal">купить</a>
-                        </li>
-                    <?php
-                        endwhile;
-                        wp_reset_postdata();
-                    ?>
-                </ul>
-            </div>
-        </section>
+
+        if ($query->have_posts()): ?>
+            <section class="cards cards_index">
+                <div class="wrapper">
+                    <h2 class="main-heading cards__h"> клубные карты </h2>
+                    <ul class="cards__list row">
+                        <?php
+                            while ($query->have_posts()):
+                                $query->the_post();
+                                $benefits_list = mb_split("\n", get_field('card_benefits'));
+                                $card_bg = get_field('card_bg');
+                                ?>
+                                <li
+                                        class="card <?php echo get_field( 'card_profit' ) ? 'card_profitable' : '' ?>"
+                                        <?php if($card_bg): ?>
+                                            style="background-image: url(<?php echo $card_bg ?>)"
+                                        <?php endif; ?>
+                                >
+                                <h3 class="card__name"> <?php the_title() ?> </h3>
+                                <p class="card__time">
+                                    <?php the_field('card_time_start'); ?>
+                                    &ndash;
+                                    <?php the_field('card_time_end'); ?>
+                                </p>
+                                <p class="card__price price">
+                                    <?php the_field('card_price'); ?>
+                                    <span class="price__unit" aria-label="рублей в месяц">
+                                        р.-/мес.
+                                    </span>
+                                </p>
+                                <ul class="card__features">
+                                    <?php foreach ($benefits_list as $benefits_item): ?>
+                                        <li class="card__feature" >
+                                            <?php echo $benefits_item ?>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                                <a data-post-id="<?php echo $id ?>" href="#modal-form" class="card__buy btn btn_modal">купить</a>
+                            </li>
+                        <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        ?>
+                    </ul>
+                </div>
+            </section>
    <?php endif; ?>
 </main>
 
